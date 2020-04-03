@@ -12,3 +12,13 @@ class Rational(val n: Int, val d: Int) {
 
   def *(that: Rational) = new Rational(n * that.n, d * that.d)
 }
+
+object Rational {
+  var r1: Rational = new Rational(1) + new Rational(1, 2)
+  var r2: Rational = r1 * new Rational(2, 2)
+
+  def main(args: Array[String]): Unit = {
+    System.out.println(r1)
+    System.out.println(r2)
+  }
+}
