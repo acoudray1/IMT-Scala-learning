@@ -1,4 +1,4 @@
-package Rational;
+package rational;
 /*
 public class Test {
     public static Rational r1 = new Rational(1).add(new Rational(1, 2));

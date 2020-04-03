@@ -1,4 +1,4 @@
-package Rational
+package rational
 
 class Rational(val n: Int, val d: Int) {
   require (d != 0)

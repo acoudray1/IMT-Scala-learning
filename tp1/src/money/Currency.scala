@@ -1,4 +1,4 @@
-package Money
+package money
 
 object Currency extends Enumeration {
   type Currency = Value
@@ -6,7 +6,7 @@ object Currency extends Enumeration {
   val Dollar = Value("USD")
   val Yen = Value("JPY")
 
-  val exchangeRate = Map(
+  val exchangeRate: Map[Currency, Map[Currency, Double]] = Map(
     Dollar -> Map(Euro -> 0.863187, Dollar -> 1, Yen -> 113.648),
     Euro -> Map(Euro -> 1, Dollar -> 1.15850, Yen -> 131.676),
     Yen -> Map(Euro -> 0.00759441, Dollar -> 0.00879910, Yen -> 1))

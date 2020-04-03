@@ -1,4 +1,4 @@
-package Rational
+package rational
 
 object Test {
   var r1: Rational = new Rational(1) + (new Rational(1, 2))
