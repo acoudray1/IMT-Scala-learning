@@ -1,5 +1,5 @@
 package Rational;
-
+/*
 public class Rational {
     private final int n;
     private final int d;
@@ -31,3 +31,4 @@ public class Rational {
                 d * that.getD());
     }
 }
+ */

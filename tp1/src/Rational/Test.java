@@ -1,5 +1,5 @@
 package Rational;
-
+/*
 public class Test {
     public static Rational r1 = new Rational(1).add(new Rational(1, 2));
 
@@ -9,3 +9,4 @@ public class Test {
         System.out.println(r1);
     }
 }
+ */
