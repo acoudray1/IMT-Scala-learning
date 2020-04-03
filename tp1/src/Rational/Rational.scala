@@ -5,17 +5,17 @@ class Rational(val n: Int, val d: Int) {
     this(n, 1)
   }
 
-  def getN = n
+  def getN: Int = n
 
-  def setN(i: Int) = {
+  def setN(i: Int): Unit = {
   }
 
-  def getD = d
+  def getD: Int = d
 
-  def setD(i: Int) = {
+  def setD(i: Int): Unit = {
   }
 
-  override def toString = n + "/" + d
+  override def toString: String = n + "/" + d
 
   def add(that: Rational) = new Rational(n * that.getD + that.getN * d, d * that.getD)
 }
