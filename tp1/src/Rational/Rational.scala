@@ -8,5 +8,7 @@ class Rational(val n: Int, val d: Int) {
 
   override def toString: String = n + "/" + d
 
-  def add(that: Rational) = new Rational(n * that.d + that.n * d, d * that.d)
+  def +(that: Rational) = new Rational(n * that.d + that.n * d, d * that.d)
+
+  def *(that: Rational) = new Rational(n * that.n, d * that.d)
 }
