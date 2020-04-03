@@ -14,11 +14,14 @@ class Rational(val n: Int, val d: Int) {
 }
 
 object Rational {
-  var r1: Rational = new Rational(1) + new Rational(1, 2)
-  var r2: Rational = r1 * new Rational(2, 2)
+  var r1: Rational = Rational(1) + Rational(1, 2)
+  var r2: Rational = r1 * Rational(2, 2)
 
   def main(args: Array[String]): Unit = {
     System.out.println(r1)
     System.out.println(r2)
   }
+
+  def apply(n: Int, d: Int) = new Rational(n, d)
+  def apply(n: Int) = new Rational(n)
 }
