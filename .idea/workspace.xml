@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b9f1aa0f-0751-4d63-b044-1b04800612b1" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1a1IzHFZyIDHxGGqeKtFqqnSRDh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Scala REPL" type="ScalaScriptConsoleRunConfiguration" factoryName="Scala Console" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="IMT-Scala-learning" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="javaOptions" value="-Djline.terminal=NONE" />
+      <option name="myConsoleArgs" value="" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Scala REPL.Scala REPL" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b9f1aa0f-0751-4d63-b044-1b04800612b1" name="Default Changelist" comment="" />
+      <created>1585896934084</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585896934084</updated>
+      <workItem from="1585896937257" duration="1880000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="184" y="123" width="1071" height="709" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585900001483">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="184" y="123" width="1071" height="709" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1585900001483" />
+    <state width="1358" height="217" key="GridCell.Tab.0.bottom" timestamp="1585904847128">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1358" height="217" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1585904847128" />
+    <state width="1358" height="217" key="GridCell.Tab.0.center" timestamp="1585904847128">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1358" height="217" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1585904847128" />
+    <state width="1358" height="217" key="GridCell.Tab.0.left" timestamp="1585904847128">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1358" height="217" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1585904847128" />
+    <state width="1358" height="217" key="GridCell.Tab.0.right" timestamp="1585904847128">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1358" height="217" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1585904847128" />
+    <state x="397" y="294" key="com.intellij.ide.util.TipDialog" timestamp="1585896940126">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="397" y="294" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1585896940126" />
+  </component>
+</project>
