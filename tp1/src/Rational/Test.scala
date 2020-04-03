@@ -5,7 +5,6 @@ object Test {
 
   def main(args: Array[String]): Unit = {
     System.out.println(r1)
-    r1.setD(0)
     System.out.println(r1)
   }
 }
