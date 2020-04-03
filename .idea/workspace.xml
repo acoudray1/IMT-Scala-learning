@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9f1aa0f-0751-4d63-b044-1b04800612b1" name="Default Changelist" comment="" />
+    <list default="true" id="b9f1aa0f-0751-4d63-b044-1b04800612b1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/tp0/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tp0/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tp0/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tp0/src/Hello/Hello.scala" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,6 +39,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -69,6 +75,7 @@
       <option name="presentableId" value="Default" />
       <updated>1585896934084</updated>
       <workItem from="1585896937257" duration="1880000" />
+      <workItem from="1585905145457" duration="79000" />
     </task>
     <servers />
   </component>
