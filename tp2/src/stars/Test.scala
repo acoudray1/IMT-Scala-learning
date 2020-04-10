@@ -1,8 +1,6 @@
 package stars
 
 object Test {
-  import stars._
-
   var rey: Human = new Human("Rey")
   var c3po: Robot = new Robot("C3PO", 12)
   var r2d2: SocialRobot = new  SocialRobot("R2D2", 10)
@@ -23,7 +21,7 @@ object Test {
     println("Result : SocialRobot(BB8, 3, None) ? " + bb8.bfToString)
     r2d2.bestFriend = Some(bb8)
     println("Result : Some(SocialRobot(BB8, 3)) ? " + r2d2.bestFriend)
-    println("Result : Some(None) ? " + bb8.bestFriend)
+    println("Result : None ? " + bb8.bestFriend)
     r2d2.mutualBestFriend(bb8)
     println("Result : Some(SocialRobot(BB8, 3)) ? " + r2d2.bestFriend)
     println("Result : Some(SocialRobot(R2D2, 3)) ? " + bb8.bestFriend)
