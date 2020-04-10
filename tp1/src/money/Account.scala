@@ -5,13 +5,12 @@ import money.Currency.Currency
 class Account(var argent: Double, var currency: Currency) {
   require(currency != null)
 
-
-  def this(n: Double) {
+  def this(n: Double): Unit = {
     this(n, Currency.Euro)
   }
 
   // Adds money on current instance
-  def addMoneyOnAccount(moreMoney: Double, moneyCurrency: Currency) = {
+  def addMoneyOnAccount(moreMoney: Double, moneyCurrency: Currency): Unit = {
     argent += moreMoney * Currency.exchangeRate(currency)(moneyCurrency)
   }
 
@@ -23,8 +22,8 @@ class Account(var argent: Double, var currency: Currency) {
 
 object Account {
 
-  var a1 = Account(10, Currency.Euro)
-  var a2 = Account(12, Currency.Yen) + a1
+  var a1: Account = Account(10, Currency.Euro)
+  var a2: Account = Account(12, Currency.Yen) + a1
 
   def main(args: Array[String]): Unit = {
     println("a1 account: " + a1.toString)
