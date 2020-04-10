@@ -11,7 +11,7 @@ object Test {
     rey.age = 24
     println("Result : Person(Rey, 24) ? " + rey.toString)
     rey.age = 14
-    println("Result : Person(Rey, 14) ? " + rey.toString)
+    println("Result : Person(Rey, 24) ? " + rey.toString)
 
     println("Result : Person(C3PO, 12) ? " + c3po.toString)
     c3po.age = 3
