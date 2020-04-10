@@ -17,11 +17,6 @@ class Account(var argent: Double, var currency: Currency) {
   // Adds Account on new Account
   def +(that: Account): Account = Account(argent + (Currency.exchangeRate(that.currency)(currency) * that.argent), currency)
 
-  // Multiply Account value on new Account
-  case class Factor(val f: Double) extends AnyVal {
-    def *(that: Account): Account = Account(that.argent * f, that.currency)
-  }
-
   override def toString: String = argent + " " + currency.toString
 }
 
@@ -29,6 +24,11 @@ object Account {
 
   var a1: Account = Account(10, Currency.Euro)
   var a2: Account = Account(12, Currency.Yen) + a1
+
+  // Multiply Account value on new Account
+  implicit class Factor(val f: Double) extends AnyVal {
+    def *(that: Account): Account = Account(that.argent * f, that.currency)
+  }
 
   def main(args: Array[String]): Unit = {
     println("a1 account: " + a1.toString)
