@@ -2,11 +2,11 @@ package rational
 
 import money.Account
 import money.Currency
-import money.Factor
+// import money.Factor
 
 object Test {
   import Currency._
-  import Factor._
+  // import Factor._
 
   // part > 4
   var r1: Rational = new Rational(1) + new Rational(1, 2)
@@ -14,8 +14,7 @@ object Test {
 
   // part 5
   val a: Account = Currency.double2Locale(22.5)
-
-  val factor: Factor = Currency.double2Factor(2.0)
+  // val factor: Factor = Currency.double2Factor(2.0)
 
   def main(args: Array[String]): Unit = {
     // part > 4

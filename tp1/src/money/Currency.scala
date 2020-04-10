@@ -15,5 +15,5 @@ object Currency extends Enumeration {
 
   implicit def double2Locale(d: Double): Account = Account(d, currency = locale)
 
-  implicit def double2Factor(d: Double): Factor = Factor(d)
+  // implicit def double2Factor(d: Double): Factor = Factor(d)
 }
