@@ -5,7 +5,7 @@ import money.Currency.Currency
 class Account(var argent: Double, var currency: Currency) {
   require(currency != null)
 
-  def this(n: Double): Unit = {
+  def this(n: Double) = {
     this(n, Currency.Euro)
   }
 

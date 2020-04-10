@@ -13,5 +13,5 @@ object Currency extends Enumeration {
     Euro -> Map(Euro -> 1, Dollar -> 1.15850, Yen -> 131.676),
     Yen -> Map(Euro -> 0.00759441, Dollar -> 0.00879910, Yen -> 1))
 
-  def double2locale(d: Double): Account = Account(d, currency = locale)
+  implicit def double2Locale(d: Double): Account = Account(d, currency = locale)
 }
