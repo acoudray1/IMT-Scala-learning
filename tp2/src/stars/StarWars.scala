@@ -8,12 +8,7 @@ class Person(name: String) {
 
   def age_=(newAge: Int): Unit = age_ = newAge
 
-  override def toString = s"stars.Person($name, $age_)"
-}
-
-
-trait Social {
-  var bestFriend: Option[Person] = None
+  override def toString = s"Person($name, $age_)"
 }
 
 
@@ -41,6 +36,20 @@ class Robot(name: String, ageIni: Int) extends Person(name) {
   }
 }
 
+
+trait Social {
+  var bestFriend: Option[Person] = None
+}
+
+
 class SocialRobot(name: String, ageIni: Int) extends Robot(name, ageIni) with Social {
 
+  def mutualBestFriend(robot: SocialRobot): Unit = {
+    this.bestFriend = Some(robot)
+    robot.bestFriend = Some(this)
+  }
+
+  override def toString = s"SocialRobot($name, $age)"
+
+  def bfToString = s"SocialRobot($name, $age, $bestFriend)"
 }
