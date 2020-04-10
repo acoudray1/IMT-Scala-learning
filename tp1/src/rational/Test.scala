@@ -2,16 +2,20 @@ package rational
 
 import money.Account
 import money.Currency
+import money.Factor
 
 object Test {
   import Currency._
+  import Factor._
 
   // part > 4
   var r1: Rational = new Rational(1) + new Rational(1, 2)
   var r2: Rational = r1 * new Rational(2, 2)
 
   // part 5
-  val a:Account = Currency.double2Locale(22.5)
+  val a: Account = Currency.double2Locale(22.5)
+
+  val factor: Factor = Currency.double2Factor(2.0)
 
   def main(args: Array[String]): Unit = {
     // part > 4
@@ -24,5 +28,6 @@ object Test {
     val b:Account = 22.5
     println("Result : Account(35.0, Currency.Euro) ? " + (b + 12.5))
     println("Result : Account(35.0, Currency.Euro) ? " + (12.5 + b))
+    println("Result : Account(45.0, Currency.Euro) ? " + (2 * b))
   }
 }

@@ -6,7 +6,7 @@ object Currency extends Enumeration {
   val Dollar: Currency.Value = Value("USD")
   val Yen: Currency.Value = Value("JPY")
 
-  var locale: Currency = Currency.Euro
+  val locale: Currency = Currency.Euro
 
   val exchangeRate: Map[Currency, Map[Currency, Double]] = Map(
     Dollar -> Map(Euro -> 0.863187, Dollar -> 1, Yen -> 113.648),
@@ -14,4 +14,6 @@ object Currency extends Enumeration {
     Yen -> Map(Euro -> 0.00759441, Dollar -> 0.00879910, Yen -> 1))
 
   implicit def double2Locale(d: Double): Account = Account(d, currency = locale)
+
+  implicit def double2Factor(d: Double): Factor = Factor(d)
 }
