@@ -13,6 +13,7 @@ object Decorate {
   val decorateQ3 = decorate("\"", _, "\"") // typage partiel
 
   def decorateC(mot: String)(implicit s: String) = decorate(s, mot, s)
+
   def decorateC2(s: String)(implicit d :(String, String)) = decorate(d._1, s, d._2)
 
   def main(args: Array[String]): Unit = {
