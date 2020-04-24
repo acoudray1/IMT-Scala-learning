@@ -16,11 +16,14 @@ object Ordre {
 
   def largestAt(f: (Int) => Int, inputs: Seq[Int]) = values(f, inputs.min, inputs.max).maxBy(_._2)._1
 
+  def adjustToPair(f: (Int, Int) => Int) = (x, y) => ((x, y))
+
   def main(args: Array[String]): Unit = {
     // Partie 5 : Ordre supérieur
     printRange(1 to 10)
     println("\nResult : Vector((-2,4), (-1,1), (0,0), (1,1), (2,4)) ? " + values(x => x * x, -2, 2))
     println("Result : 25 ? " + largest(x => 10 * x - x * x, 1 to 10))
     println("Result : 5 ? " + largestAt(x => 10 * x - x * x, 1 to 10))
+    println("Result : 42 ? " + adjustToPair(_ * _)((6, 7)))
   }
 }
