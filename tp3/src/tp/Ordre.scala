@@ -13,6 +13,6 @@ object Ordre {
   def main(args: Array[String]): Unit = {
     // Partie 5 : Ordre supérieur
     printRange(1 to 10)
-    
+
   }
 }

@@ -26,6 +26,9 @@ object Calculator {
     _factorielle3(i, 1)
   }
 
+  def factorielleRev(n: Int): Int = if(n <= 1) 1 else (1 to n).reduce((x, y) => x * y)
+  // alternative : def factorielleRev(n: Int): Int = if(n <= 1) 1 else (1 to n).product
+
   def main(args: Array[String]): Unit = {
     // Partie 4 : Récursion explicite
     println("*** Partie 4 ***")
@@ -42,5 +45,11 @@ object Calculator {
     println("Result : 6 ? " + factorielle3(3))
     println("Result : 1 ? " + factorielle3(0))
     println("Result : 3,628,800 ? " + factorielle3(10))
+
+    // Partie 5.3 : Factorielle revisitée
+    println("\n*** Partie 5 ***")
+    println("Result : 6 ? " + factorielleRev(3))
+    println("Result : 1 ? " + factorielleRev(0))
+    println("Result : 3,628,800 ? " + factorielleRev(10))
   }
 }
