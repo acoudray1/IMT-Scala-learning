@@ -19,6 +19,7 @@ object Calculator {
     _fact2(i, 1)
   }
 
+  // Eception levée avec des trop grandes valeurs (ex: 10000)
   val factorielle3: BigInt => BigInt = (i: BigInt) => {
     lazy val _factorielle3: (BigInt, BigInt) => BigInt = (n: BigInt, acc: BigInt) =>
       if(n <= 1) acc else _factorielle3(n-1, n * acc)
