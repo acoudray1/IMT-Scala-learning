@@ -19,11 +19,21 @@ object Calculator {
     _fact2(i, 1)
   }
 
-  // Eception levée avec des trop grandes valeurs (ex: 10000)
+  // Exception levée avec des trop grandes valeurs (ex: 10000)
   val factorielle3: BigInt => BigInt = (i: BigInt) => {
     lazy val _factorielle3: (BigInt, BigInt) => BigInt = (n: BigInt, acc: BigInt) =>
       if(n <= 1) acc else _factorielle3(n-1, n * acc)
     _factorielle3(i, 1)
+  }
+  /*
+    Correction pour éviter de lever l'exception. Faire une fonction qui appelle une méthode imbriqué au lieu de 2 fonctions
+    imbriqués car cela n'est pas traité pareil par le compilateur
+   */
+  lazy val fact3: BigInt => BigInt = {
+    def _fact3(i: BigInt, acc: BigInt): BigInt = {
+      if(i <=1) acc else _fact3(i-1, i*acc)
+    }
+    (n:BigInt) =>_fact3(n, 1)
   }
 
   def factorielleRev(n: Int): Int = if(n <= 1) 1 else (1 to n).reduce((x, y) => x * y)
