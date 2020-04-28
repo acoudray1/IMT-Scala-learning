@@ -21,3 +21,18 @@ case object TIMES extends Op2[Int] {
   def toVal: (Int, Int) => Int = _ * _
   def toInfix: (String, String) => String = (e1, e2) => s"($e1 * $e2)"
 }
+
+case object NOT extends Op1[Boolean] {
+  def toVal: Boolean => Boolean = ! _
+  def toInfix: String => String = "!" + _
+}
+
+case object AND extends Op2[Boolean] {
+  def toVal: (Boolean, Boolean) => Boolean = _ && _
+  def toInfix: (String, String) => String = (e1, e2) => s"($e1 && $e2)"
+}
+
+case object OR extends Op2[Boolean] {
+  def toVal: (Boolean, Boolean) => Boolean = _ || _
+  def toInfix: (String, String) => String = (e1, e2) => s"($e1 || $e2)"
+}
