@@ -4,7 +4,7 @@ import scala.util.control.Breaks._
 
 object Rainfall {
 
-  private def rainfall(rainfalls: List[Integer]): Option[Double] = {
+  private def rainfall(rainfalls: List[Int]): Option[Double] = {
     if (rainfalls.isEmpty) None
     var sum = 0
     var n = 0
@@ -22,7 +22,7 @@ object Rainfall {
     else None
   }
 
-  private def test(rainfalls: List[Integer]) = try {
+  private def test(rainfalls: List[Int]) = try {
     println("====")
     println(rainfalls)
     println(rainfall(rainfalls))

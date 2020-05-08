@@ -1,20 +1,20 @@
 package rainfallS2
 
-import scala.util.control.Breaks._
-
 object Rainfall {
 
-  private def rainfall(rainfalls: List[Integer]): Option[Double] = {
+  private def rainfall(rainfalls: List[Int]): Option[Double] = {
     if (rainfalls.isEmpty) None
     val l = rainfalls
       .takeWhile((rainfall) => rainfall != -999)
       .filter((rainfall) => rainfall >= 0)
+    val n = l.size
+    val sum = l.reduceOption[Int](_ + _)
 
-    if (l.nonEmpty) Some(l.reduceOption[Integer](_ + _).get.toDouble / l.size)
+    if (n != 0) Some(sum.get.toDouble / n)
     else None
   }
 
-  private def test(rainfalls: List[Integer]) = try {
+  private def test(rainfalls: List[Int]) = try {
     println("====")
     println(rainfalls)
     println(rainfall(rainfalls))
